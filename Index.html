@@ -64,7 +64,7 @@
                                                 </div>
                                                         <div class="col-md-1 ">
                                                         <label for="peso" class="text-primary">Altura (ex:1,70)</label>
-                                                        <input type="text" id="AlturaIMC" maxlength="4"class="form-control border-primary">
+                                                        <input type="text" id="AlturaIMC" maxlength="4" class="form-control border-primary">
                                                         </div>
                                                                
                                                                
@@ -102,33 +102,44 @@
                                 <div>
                                     <form>
                                         <div class="row text-center justify-content-center">
-                                            <div class="col-md-1 text-center">
-                                                <label for="Sexo">SEXO</label>
-                                             
-                                                <select id="sexo" class="form-select text-center">
-                                                    <option value="Sexo">Sexo</option>
-                                                    <option value="M">Masculino</option>
-                                                    <option value="F">Feminino</option>
-                                                </select>
-                                            </div>
+                                                        <div class="col-md-2 text-center">
+                                                        <label for="Sexo">SEXO</label>
+                                                    
+                                                        <select id="sexo" class="form-select text-center border-primary">
+                                                            <option value="Sexo">Sexo</option>
+                                                            <option value="M">Masculino</option>
+                                                            <option value="F">Feminino</option>
+                                                        </select>
+                                                        </div>
 
-                                            <div class="col-md-1">
-                                                <label for="peso" class="text-primary">Peso (ex:69,2)</label>
-                                                <input type="text" id="PesoCal" maxlength="6"  class="form-control border-primary">
-                                                </div>
+                                                                <div class="col-md-2">
+                                                                <label for="peso" class="text-primary">Peso (ex:69,2)</label>
+                                                                <input type="text" id="PesoCal" maxlength="6"  class="form-control border-primary">
+                                                                </div>
 
-                                               <div class="col-md-1 text-center">
-                                                <label for="Idade">Idade</label>
-                                                <select id="Idade" class="form-select text-center">
-                                                    <option value="Idade">Idade</option>
-                                                    <option value="10">10-18</option>
-                                                    <option value="18">18-30</option>
-                                                    <option value="30">30-60</option>
-                                                    <option value="60">Acima de 60</option>
-                                                </select>
-                                               </div>
-                                             </div>
-                                             <br>
+                                                                        <div class="col-md-1 text-center">
+                                                                        <label for="Idade">Idade</label>
+                                                                        <input type="number" id="Idade" class="form-control border-primary">
+                                                                        </div>
+
+                                                                                    <div class="col-md-1 text-center">
+                                                                                    <label for="altura">Altura(ex:65)</label>
+                                                                                    <input type="text" id="AlturaCal"  maxlength="4" class="form-control border-primary">
+                                                                                    </div>
+
+                                                                                            <div class="col-md-1 text-center">
+                                                                                                <label for="AF">Atividade Fisica</label>
+                                                                                            
+                                                                                                <select id="AF" class="form-select text-center  border-primary">
+                                                                                                    <option value="AF">Quanto Ativo Você se considera ?</option>
+                                                                                                    <option value="S">SEDENTÁRIO</option>
+                                                                                                    <option value="MO">MODERADO</option>
+                                                                                                    <option value="I">INTENSO</option>
+                                                                                                </select>
+                                                                                            </div>
+
+                                        </div>
+                                            <br>
                                             <div class="text-center">
                                                 <button type="button" id="Enviar" class="btn btn-primary text-center">Enviar</button>
                                             </div>
@@ -161,98 +172,7 @@
 
 <br>
 
-<!-- 
-                                            <div class="accordion" id="accordionExample">
-                                                <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    IMC
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <p class="fs-6">IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
-
-                                                            O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
-                                                            
-                                                            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
-                                                            
-                                                            <div>
-                                                                <form>
-                                                                    <div class="row">
-                                                                        <div class="col-md-1 text-center">
-                                                                        <label for="peso">PESO</label>
-                                                                        <input type="text" class="form-control">
-                                                                        </div>
-                                                                            <div class="col-md-1 text-center">
-                                                                            <label for="peso">ALTURA</label>
-                                                                            <input type="text" class="form-control">
-                                                                            </div>
-                                                                                <div class="col-md-1 text-center">
-                                                                                <label for="peso">RESULTADO</label>
-                                                                                <input type="text" class="form-control" disabled>
-                                                                                </div>
-                                                           
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <br>
-
-                                            <div class="accordion" id="accordionExample">
-                                                <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapse">
-                                                    Calculo Metabolico
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <p class="fs-6">Muitos indivíduos iniciam na musculação buscando o ganho de massa muscular.  Esse ganho é dependente não somente do estímulo do treinamento, mas também da adequada ingestão de calorias e nutrientes através da dieta.
-
-                                                            Para o cálculo de uma dieta é primeiro necessário o conhecer as necessidades energéticas do indivíduo, seu gasto energético total (GET) diário.
-                                                            
-                                                            A taxa metabólica basal (TMB) se refere ao gasto energético para manterá temperatura do organismo e suas funções vitais normais. Cerca de 50-70% do gasto energético diário corresponde a TMB. A TMB reduz com a idade e homens possuem um valor um pouco mais alto do que as mulheres..</p>
-                                                            
-                                                            <div>
-                                                                <form>
-                                                                    <div class="row">
-                                                                        <div class="col-md-1 text-center">
-                                                                
-                                                                            <label for="Sexo">SEXO</label>
-                                                                         
-                                                                            <select class="form-select text-center">
-                                                                                <option value="teste">Sexo</option>
-                                                                                <option value="Masculino">Masculino</option>
-                                                                                <option value="Feminina">Feminino</option>
-                                                                            </select>
-                                                                           
-                                                                            
-                                                                        
-                                                                        </div>
-                                                                           
-                                                           
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-            <br>
-    </div> -->
-    
-
-   
-   
-   
-   
-   
-   
+ 
    
     <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
