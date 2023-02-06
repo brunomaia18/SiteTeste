@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutri Estudante|Livia</title>
-    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="Index.css">
+    <script src="script.js"></script>
 </head>
 <body class="page-template page-template-elementor_canvas page page-id-1460 elementor-default elementor-template-canvas elementor-kit-241 elementor-page elementor-page-1460 e--ua-blink e--ua-opera e--ua-webkit loaded dialog-body dialog-lightbox-body dialog-container dialog-lightbox-container">
     <header class="bg-white">
@@ -43,33 +47,38 @@
                             IMC
                         </button>
                       </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ">
                             <p class="fs-6">IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
 
                                 O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
                                 
                                 Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
                                 
-                                <div>
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-1 text-center">
-                                            <label for="peso">PESO</label>
-                                            <input type="text" class="form-control">
-                                            </div>
-                                                <div class="col-md-1 text-center">
-                                                <label for="peso">ALTURA</label>
-                                                <input type="text" class="form-control">
+                                <div >
+                                    <form class="">
+                                        <div class="row justify-content-center text-center">
+                                                <div class="col-md-1">
+                                                <label for="peso" class="text-primary">Peso (ex:69,2)</label>
+                                                <input type="text" id="PesoIMC" maxlength="6"  class="form-control border-primary">
                                                 </div>
-                                                    <div class="col-md-1 text-center">
-                                                    <label for="peso">RESULTADO</label>
-                                                    <input type="text" class="form-control" disabled>
-                                                    </div>
-                               
+                                                        <div class="col-md-1 ">
+                                                        <label for="peso" class="text-primary">Altura (ex:1,70)</label>
+                                                        <input type="text" id="AlturaIMC" maxlength="4"class="form-control border-primary">
+                                                        </div>
+                                                               
+                                                               
+                                                        
+                                            </div>   
+                                            <br>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                                <button type="button" id="btn" class="btn btn-primary mb-3">Enviar</button>     
+                                            </div>       
                                     </form>
                                 </div>
-
+                                <div id="res">
+                                 
+                                </div>
                         </div>
                       </div>
                     </div>
