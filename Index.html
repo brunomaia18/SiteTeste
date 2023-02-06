@@ -82,7 +82,7 @@
                         </div>
                       </div>
                     </div>
-
+<br>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -96,7 +96,8 @@
 
                                 Para o cálculo de uma dieta é primeiro necessário o conhecer as necessidades energéticas do indivíduo, seu gasto energético total (GET) diário.
                                 
-                                A taxa metabólica basal (TMB) se refere ao gasto energético para manterá temperatura do organismo e suas funções vitais normais. Cerca de 50-70% do gasto energético diário corresponde a TMB. A TMB reduz com a idade e homens possuem um valor um pouco mais alto do que as mulheres..</p>
+                                A taxa metabólica basal (TMB) se refere ao gasto energético para manterá temperatura do organismo e suas funções vitais normais. Cerca de 50-70% do gasto energético diário corresponde a TMB. A TMB reduz com a idade e homens possuem um valor um pouco mais alto do que as mulheres..
+                            </p>
                                 
                                 <div>
                                     <form>
@@ -104,40 +105,44 @@
                                             <div class="col-md-1 text-center">
                                                 <label for="Sexo">SEXO</label>
                                              
-                                                <select class="form-select text-center">
-                                                    <option value="teste">Sexo</option>
-                                                    <option value="Masculino">Masculino</option>
-                                                    <option value="Feminina">Feminino</option>
+                                                <select id="sexo" class="form-select text-center">
+                                                    <option value="Sexo">Sexo</option>
+                                                    <option value="M">Masculino</option>
+                                                    <option value="F">Feminino</option>
                                                 </select>
                                             </div>
+
+                                            <div class="col-md-1">
+                                                <label for="peso" class="text-primary">Peso (ex:69,2)</label>
+                                                <input type="text" id="PesoCal" maxlength="6"  class="form-control border-primary">
+                                                </div>
+
                                                <div class="col-md-1 text-center">
                                                 <label for="Idade">Idade</label>
-                                                <select class="form-select text-center">
+                                                <select id="Idade" class="form-select text-center">
                                                     <option value="Idade">Idade</option>
-                                                    <option value="10-18">10-18</option>
-                                                    <option value="18-30">18-30</option>
-                                                    <option value="30-60">30-60</option>
+                                                    <option value="10">10-18</option>
+                                                    <option value="18">18-30</option>
+                                                    <option value="30">30-60</option>
                                                     <option value="60">Acima de 60</option>
                                                 </select>
                                                </div>
-
-                                               <div class="col-md-1 text-center">
-                                                <label for="Consumo">Calorias</label>
-                                                <input class="form-control" disabled>
-                                               </div>
-
                                              </div>
                                              <br>
                                             <div class="text-center">
-                                                <button type="submit" class="btn btn-primary text-center">Enviar</button>
+                                                <button type="button" id="Enviar" class="btn btn-primary text-center">Enviar</button>
+                                            </div>
+                                            <div id="resp">
+                                 
                                             </div>
                                     </form>
                                 
-
+</div>
+                                </div>
+                                
                         </div>
-                      </div>
                     </div>
-
+<br>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -154,7 +159,7 @@
                     </div>
                   </div>
 
-
+<br>
 
 <!-- 
                                             <div class="accordion" id="accordionExample">
