@@ -2,6 +2,7 @@ $(function() {
     $("#AlturaIMC").maskMoney({ decimal: '.', thousands: '', precision: 2 });
     $("#PesoIMC").maskMoney({ decimal: '.', thousands: '', precision: 2 });
     $("#PesoCal").maskMoney({ decimal: '.', thousands: '', precision: 2 });
+   
   })
 $(document).ready(function(){
 
@@ -47,76 +48,21 @@ $(document).ready(function(){
         const Idade = document.getElementById("Idade").value;
         const Sexo = document.getElementById("sexo").value;
         const Peso = document.getElementById("PesoCal").value;
+        const Altura = document.getElementById("AlturaCal").value;
         const res = document.getElementById("resp");
         
         console.log(Idade)
         console.log(Sexo)
-       if(Sexo == "M" && Idade == "10") {
-       let valor = 	(17.686*Peso) + 658.2;
-       let calcImc = valor.toFixed (1)
-       valor = valor.toFixed(1) //fixando resultado do imc só até a primeira casa decimal
+    if(Sexo =="F"){
+        let calculo = 655 + (9.6*Peso) + (1.9* Altura) - (4.7 * Idade)
         res.style.color = '#4FFF00';
-        res.innerHTML = `Seu consumo de calorias diaria deve ser ${valor}`;
+        res.innerHTML = `Sua Taxa metabólica basal é ${calculo}`;
+    } else  if(Sexo =="M"){
+        let calculo = 66 + (13.8*Peso) + (5.0* Altura) - (6.8 * Idade)
+        res.style.color = '#B7960A';
+        res.innerHTML = `Sua Taxa metabólica basal é ${calculo}`;
+    }
 
-       }else  if(Sexo == "F" && Idade == "10") {
-        let valor =(13.384*Peso) + 692.6
-        let calcImc = valor.toFixed (1)
-        valor = valor.toFixed(1) //fixando resultado do imc só até a primeira casa decimal
-         res.style.color = '#4FFF00';
-         res.innerHTML = `Seu consumo de calorias diaria deve ser ${valor}`;
-
-        }else if(Sexo == "M" && Idade == "18") {
-            let valor =	(15.057 * Peso) + 692.2
-            let calcImc = valor.toFixed (1)
-            valor = valor.toFixed(1) //fixando resultado do imc só até a primeira casa decimal
-             res.style.color = '#4FFF00';
-             res.innerHTML = `Seu consumo de calorias diaria deve ser ${valor}`;
-
-            }else if(Sexo == "F" && Idade == "18") {
-            let valor =	(14.818*Peso) + 486.6
-            let calcImc = valor.toFixed (1)
-            valor = valor.toFixed(1) //fixando resultado do imc só até a primeira casa decimal
-             res.style.color = '#4FFF00';
-             res.innerHTML = `Seu consumo de calorias diaria deve ser ${valor}`;
-            
-            }else if(Sexo == "M" && Idade == "30") {
-                let valor =	(11.472 * Peso) + 873.1
-                let calcImc = valor.toFixed (1)
-                valor = valor.toFixed(1) //fixando resultado do imc só até a primeira casa decimal
-                 res.style.color = '#4FFF00';
-                 res.innerHTML = `Seu consumo de calorias diaria deve ser ${valor}`;
-                
-                }else if(Sexo == "F" && Idade == "30") {
-                    let valor =	(8.126 * Peso) + 845.6
-                    let calcImc = valor.toFixed (1)
-                    valor = valor.toFixed(1) //fixando resultado do imc só até a primeira casa decimal
-                     res.style.color = '#4FFF00';
-                     res.innerHTML = `Seu consumo de calorias diaria deve ser ${valor}`;
-                   
-                    }else if(Sexo == "M" && Idade == "60") {
-                        let valor =(11.711 * Peso) + 587.7
-                        let calcImc = valor.toFixed (1)
-                        valor = valor.toFixed(1) //fixando resultado do imc só até a primeira casa decimal
-                         res.style.color = '#4FFF00';
-                         res.innerHTML = `Seu consumo de calorias diaria deve ser ${valor}`;
-                        
-                        }else if(Sexo == "F" && Idade == "60") {
-                            let valor =	(9.082 * Peso) + 658.5
-                            let calcImc = valor.toFixed (1)
-                            valor = valor.toFixed(1) //fixando resultado do imc só até a primeira casa decimal
-                             res.style.color = '#4FFF00';
-                             res.innerHTML = `Seu consumo de calorias diaria deve ser ${valor}`;
-                            }
-
-
-
-
-
-
-
-       else{
-        res.innerHTML = 'testando NADA';
-       }
     });
 
 })
