@@ -22,12 +22,12 @@ h1{
 } */
 
 
-/* 
+
 @media screen and (max-width:999px)
 {
     #foto { 
-     height: 100%;
-     max-width: max-content;
+     height: 400px;
+     width: 300px;
     }
     #td{
         width: 1px;
@@ -38,7 +38,7 @@ h1{
         height: 5px;
     }
     
-} */
+}
 
 /* @media screen and (max-width:480px)
 {
